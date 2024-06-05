@@ -1,4 +1,6 @@
 import NavBar from "../components/NavBar";
+import {useEffect,useState} from "react";
+
 function Home(){
     return(
         <div>
