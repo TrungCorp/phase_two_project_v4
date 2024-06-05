@@ -1,3 +1,23 @@
 {
-    "techniques": ["Fire Style: Fire Ball Justu", "Water Style: Water Dragon", "Earth Style: Mud Wall"]
+
+    "techniques": [
+        "Fire Style: Fire Ball Justu",
+        "Water Style: Water Dragon",
+        "Earth Style: Mud Wall",
+        "Fire Style: Majestic Flame Wall",
+        "Chidori"
+    ],
+    "techniqueUsers": [
+        {
+            "id": 0,
+            "name": "Kamdo Urai",
+            "techniques": ["Fire Style: Majestic Flame Wall","Chidori"]
+        },
+        {
+            "id": 1,
+            "name": "Jaeson Tano",
+            "techniques":["Lightning Style: Lightning storm","Fire Style: Dragon Flame Justu"]
+        }
+    ] 
+    
 }
