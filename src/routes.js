@@ -1,6 +1,8 @@
 
 import Home from "./pages/Home"
-import Techniques from "./pages/Techniques";
+import ErrorPage from "./pages/ErrorPage";
+import Battle from "./pages/Battle";
+import History from "./pages/History";
 import App from "./App"
 const routes = [
     {
@@ -18,7 +20,8 @@ const routes = [
 
             },
             {
-                path: ""
+                path: "/history",
+                element: <History/>
             }
 
         ]

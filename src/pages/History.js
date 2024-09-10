@@ -5,3 +5,4 @@ function History(){
         </div>
     )
 }
+export default History

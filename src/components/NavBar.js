@@ -7,8 +7,11 @@ function NavBar(){
                 Home
             </NavLink>
 
-            <NavLink to="/techniques">
-                Techniques
+            <NavLink to="/battlepage">
+                BATTLE
+            </NavLink>
+            <NavLink to="/history">
+                HISTORY 
             </NavLink>
         </nav>
     )
