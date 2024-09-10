@@ -1,16 +1,29 @@
 
 import Home from "./pages/Home"
 import Techniques from "./pages/Techniques";
+import App from "./App"
 const routes = [
     {
         path: "/",
-        element: <Home/>
+        element: <App/>,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "/",
+                element: <Home />
+            },
+            {
+                path: "/battlepage",
+                element: <Battle/>
 
-    },
-    {
-        path: "/techniques",
-        element: <Techniques/>
+            },
+            {
+                path: ""
+            }
+
+        ]
     }
+ 
 ]
 
 export default routes;

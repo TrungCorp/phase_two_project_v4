@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import {useEffect,useState} from "react";
-
+import uchiha from "../images/uchiha1.png"
 function Home(){
     const [users,setUsers] = useState([])
   useEffect(()=>{
@@ -12,9 +12,17 @@ function Home(){
   const userList = users.map((user)=> {
     return <article key={user.name}>
         <h2>{user.name}</h2>
+        <img src={uchiha}></img>
         <h2>Techiques:
             <ul>
-                {user.techniques.map(technique => <li>{technique}</li>)}
+                {user.techniques.map(technique =>
+                    
+                     <li>{technique}
+                         
+                     </li>
+                     
+                    )}
+
             </ul>
         </h2>
     </article>
