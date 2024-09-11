@@ -1,5 +1,6 @@
 
-
+import ReserveContainer from "./ReserveContainer";
+import ActiveContainer from "./ActiveContainer";
 function Home(){
  
  
@@ -10,7 +11,8 @@ function Home(){
               
             </header>
             HOME PAGE
-
+            <ActiveContainer/>
+            <ReserveContainer/>
         </div>
     )
 }
