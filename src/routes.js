@@ -2,7 +2,7 @@
 import Home from "./pages/Home"
 import ErrorPage from "./pages/ErrorPage";
 import Battle from "./pages/Battle";
-import History from "./pages/History";
+import PlayerForm from "./pages/History";
 import App from "./App"
 const routes = [
     {
@@ -20,8 +20,8 @@ const routes = [
 
             },
             {
-                path: "/history",
-                element: <History/>
+                path: "/playerform",
+                element: <PlayerForm/>
             }
 
         ]

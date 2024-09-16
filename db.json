@@ -1,25 +1,37 @@
 
 {
 
-    "techniques": [
-        "Fire Style: Fire Ball Justu",
-        "Water Style: Water Dragon",
-        "Earth Style: Mud Wall",
-        "Fire Style: Majestic Flame Wall",
-        "Chidori"
-    ],
-    "techniqueUsers": [
+    "players": [
         {
             "id": 0,
-            "name": "Kamdo Urai",
-            "techniques": ["Fire Style: Majestic Flame Wall","Chidori"],
-            "image": "./src/images/uchiha1.png"
+            "name": "Jack Green",
+            "attack": 7
+
         },
         {
             "id": 1,
-            "name": "Jaeson Tano",
-            "techniques":["Lightning Style: Lightning storm","Fire Style: Dragon Flame Justu"]
+            "name": "Kate Archer",
+            "attack": 5
+        },
+        {
+            "id": 2,
+            "name": "Enshi Toga",
+            "attack": 8
         }
-    ] 
+    ],
+    "history": [
+        {
+            "id": 0,
+            "player1": "Enshi Toga",
+            "player2": "Kate Archer",
+            "winner": "Enshi Toga"
+        },
+        {
+            "id": 1,
+            "player1": "Jack Green",
+            "player2": "Kate Archer",
+            "winner": "Jack Green"
+        }
+    ]
     
 }
