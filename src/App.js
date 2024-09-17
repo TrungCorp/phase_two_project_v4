@@ -11,11 +11,14 @@ function App() {
     .then(data=>setPlayers(data))
     .catch(error => console.error(error))
   },[])
-  console.log(players)
+  function handleNewPlayer(playerObj){
+    setPlayers((previousPlayers)=>[...previousPlayers,playerObj])
+  }
+  
   return (
     <div className="App">
       <NavBar/>
-      <Outlet context={players}/>
+      <Outlet context={{players,handleNewPlayer}}/>
     </div>
   );
 }

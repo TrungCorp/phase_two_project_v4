@@ -8,7 +8,8 @@ import "../components/Home.css"
 
 function Home(){
    
-    const players = useOutletContext()
+    const {players} = useOutletContext()
+  
     const playerList = players.map((player)=>{
         return <h1 key={player.id}>{player.name}</h1>
     })

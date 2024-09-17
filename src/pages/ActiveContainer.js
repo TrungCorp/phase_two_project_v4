@@ -3,7 +3,7 @@ function ActiveContainer({playerList}){
   
     return(
         <div>
-            ACTIVE CONTAINER
+            PLAYER LIST:
             {playerList}
         </div>
     )

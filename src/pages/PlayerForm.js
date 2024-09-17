@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Form } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 import "../components/Form.css"
 
 function PlayerForm(){
     const [name,setName] = useState("")
     const [attack,setAttack] = useState("")
-    
+    const {handleNewPlayer} =useOutletContext()
 
     function handleName(event){
         
@@ -30,9 +31,10 @@ function PlayerForm(){
         .then(resp=>resp.json())
         .then(data=>{
             console.log(data)
+            handleNewPlayer(data)
         })  
     }
-    
+
     return(
         <div>
             ENTER DATA FOR NEW PLAYER
