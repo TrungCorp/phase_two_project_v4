@@ -1,37 +1,29 @@
-
 {
-
-    "players": [
-        {
-            "id": 0,
-            "name": "Jack Green",
-            "attack": 7
-
-        },
-        {
-            "id": 1,
-            "name": "Kate Archer",
-            "attack": 5
-        },
-        {
-            "id": 2,
-            "name": "Enshi Toga",
-            "attack": 8
-        }
-    ],
-    "history": [
-        {
-            "id": 0,
-            "player1": "Enshi Toga",
-            "player2": "Kate Archer",
-            "winner": "Enshi Toga"
-        },
-        {
-            "id": 1,
-            "player1": "Jack Green",
-            "player2": "Kate Archer",
-            "winner": "Jack Green"
-        }
-    ]
-    
+  "players": [
+    {
+      "id": 0,
+      "name": "Jack Green",
+      "attack": 7
+    },
+    {
+      "id": 1,
+      "name": "Kate Archer",
+      "attack": 5
+    },
+    {
+      "id": 2,
+      "name": "Enshi Toga",
+      "attack": 8
+    },
+    {
+      "name": "Yugi Seto",
+      "attack": "10",
+      "id": 3
+    },
+    {
+      "name": "Kaiba Kaiber",
+      "attack": "7",
+      "id": 4
+    }
+  ]
 }

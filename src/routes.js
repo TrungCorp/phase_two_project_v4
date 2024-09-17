@@ -2,7 +2,7 @@
 import Home from "./pages/Home"
 import ErrorPage from "./pages/ErrorPage";
 import Battle from "./pages/Battle";
-import PlayerForm from "./pages/History";
+import PlayerForm from "./pages/PlayerForm";
 import App from "./App"
 const routes = [
     {

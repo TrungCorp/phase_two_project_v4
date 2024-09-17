@@ -6,13 +6,13 @@ function NavBar(){
             <NavLink to="/">
                 Home
             </NavLink>
-
+            <NavLink to="/playerform">
+                FORM
+            </NavLink>
             <NavLink to="/battlepage">
                 BATTLE
             </NavLink>
-            <NavLink to="/history">
-                HISTORY 
-            </NavLink>
+            
         </nav>
     )
 }

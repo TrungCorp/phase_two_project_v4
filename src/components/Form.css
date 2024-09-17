@@ -1,0 +1,19 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+button {
+    width: 35%;
+    /* Ensures the button is not stretched */
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
