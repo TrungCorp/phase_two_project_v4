@@ -1,5 +1,5 @@
 import { useOutletContext } from "react-router-dom"
-
+import "../components/Battle.css"
 function Battle(){
     const {players} = useOutletContext()
     console.log(players)
@@ -8,8 +8,18 @@ function Battle(){
         console.log("BATTLE.JS TEST")
     }
     return(
-        <div>
-            BATTLE PAGE
+        <div className="battle-container">
+            <div className="box-container">
+                <div className="box left-box">
+                    LEFT BOX
+                </div>
+                <div className="vs-tag">VS</div>
+                <div className="box right-box">
+                    RIGHT BOX
+
+                </div>
+            </div>
+            <button >BATTLE!</button>
         </div>
     )
 }

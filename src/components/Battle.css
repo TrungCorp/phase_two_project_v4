@@ -1,0 +1,41 @@
+.battle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+.vs-tag {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Optional: Make the text bold */
+    margin: 0 10px;
+    padding-top: 100px;
+    /* Add some horizontal margin to create space around the VS tag */
+}
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    /* Optional: Max width to limit the container size */
+    padding: 0 20px;
+    /* Optional: Add padding for spacing on the sides */
+}
+.box {
+    width: 45%;
+        height: 300px;
+        border: 1px solid #000;
+}
+.battle-button {
+    margin-top: 20px;
+    align-self: center;
+}
+.left-box {
+    /* Additional styles for the left box */
+}
+
+.right-box {
+    /* Additional styles for the right box */
+}
