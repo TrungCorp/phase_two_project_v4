@@ -16,19 +16,9 @@
       "attack": 8
     },
     {
-      "name": "Yugi Seto",
-      "attack": "10",
-      "id": 3
-    },
-    {
-      "name": "Seno Powers",
-      "attack": "8",
-      "id": 4
-    },
-    {
       "name": "Kaiba Kaiber",
       "attack": "10",
-      "id": 5
+      "id": 3
     }
   ]
 }
