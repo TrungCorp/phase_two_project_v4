@@ -1,7 +1,6 @@
 {
   "players": [
     {
-      
       "name": "Jack Green",
       "attack": 7,
       "age": 24,
@@ -9,7 +8,6 @@
       "id": 0
     },
     {
-      
       "name": "Kate Archer",
       "attack": 5,
       "age": 20,
@@ -17,12 +15,18 @@
       "id": 1
     },
     {
-      
       "name": "Enshi Toga",
       "attack": 8,
       "age": 19,
       "damage-boost": 2,
       "id": 2
+    },
+    {
+      "name": "Soto Sona",
+      "attack": "5",
+      "age": "35",
+      "damage-boost": "7",
+      "id": 3
     }
   ]
 }

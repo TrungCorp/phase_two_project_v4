@@ -14,9 +14,13 @@ function Battle(){
     }
     function handleBattle(){
         
-        const randNum1 = genRandNumber()
-
-        console.log(randNum1)
+        let randNum1 = genRandNumber()
+        let randNum2 = genRandNumber()
+        //While loop makes sure that random numbers 1 and 2 are different
+        while(randNum1 === randNum2){
+            randNum2 = genRandNumber()
+        }
+        console.log(randNum1 +" " + randNum2)
     }
     return(
         <div className="battle-container">
