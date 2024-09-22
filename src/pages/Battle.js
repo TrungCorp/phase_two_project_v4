@@ -7,8 +7,16 @@ function Battle(){
     const [damageBoost,setDamageBoost] = useState([])
     console.log(players)
 
+    function genRandNumber(){
+        const dataLength = players.length
+        const randomNum = Math.floor(Math.random() * dataLength)
+        return randomNum
+    }
     function handleBattle(){
-        console.log("BATTLE.JS TEST")
+        
+        const randNum1 = genRandNumber()
+
+        console.log(randNum1)
     }
     return(
         <div className="battle-container">
@@ -22,7 +30,7 @@ function Battle(){
 
                 </div>
             </div>
-            <button >BATTLE!</button>
+            <button onClick={handleBattle}>BATTLE!</button>
         </div>
     )
 }
