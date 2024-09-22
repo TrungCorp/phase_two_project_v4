@@ -6,6 +6,8 @@ import "../components/Form.css"
 function PlayerForm(){
     const [name,setName] = useState("")
     const [attack,setAttack] = useState("")
+    const [age,setAge] = useState("")
+    const [damageBoost,setDamageBoost] = useState()
     const {handleNewPlayer} =useOutletContext()
 
     function handleName(event){
@@ -16,6 +18,13 @@ function PlayerForm(){
         
         setAttack(event.target.value)
     }
+
+    function handleAge(event){
+        setAge(event.target.value)
+    }
+    function handleDamage(event){
+        setDamageBoost(event.target.value)
+    }
     function handleSubmit(event){
         event.preventDefault()
         fetch("http://localhost:3001/players",{
@@ -25,7 +34,9 @@ function PlayerForm(){
             },
             body: JSON.stringify({
                 "name": name,
-                "attack": attack
+                "attack": attack,
+                "age": age,
+                "damage-boost": damageBoost
             })
         })
         .then(resp=>resp.json())
@@ -44,6 +55,12 @@ function PlayerForm(){
                 </label>
                 <label>Attack Power:
                     <input type="text" value={attack} onChange={handleAttack} />
+                </label>
+                <label>Age:
+                    <input type="text" value={age} onChange={handleAge} />
+                </label>
+                <label>Max Damage Boost:
+                    <input type="text" value={damageBoost} onChange={handleDamage} />
                 </label>
                 <button type="submit">ADD NEW PLAYER</button>
             </Form>

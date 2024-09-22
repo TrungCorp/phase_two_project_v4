@@ -1,34 +1,28 @@
 {
   "players": [
     {
-      "id": 0,
+      
       "name": "Jack Green",
       "attack": 7,
-      "age": 24
+      "age": 24,
+      "damage-boost": 5,
+      "id": 0
     },
     {
-      "id": 1,
+      
       "name": "Kate Archer",
       "attack": 5,
-      "age": 20
+      "age": 20,
+      "damage-boost": 3,
+      "id": 1
     },
     {
-      "id": 2,
+      
       "name": "Enshi Toga",
       "attack": 8,
-      "age": 19
-    },
-    {
-      "name": "Kaiba Kaiber",
-      "attack": "10",
-      "id": 3,
-      "age": 22
-    },
-    {
-      "name": "Seno Powers",
-      "attack": "13",
-      "id": 4,
-      "age": 27
+      "age": 19,
+      "damage-boost": 2,
+      "id": 2
     }
   ]
 }

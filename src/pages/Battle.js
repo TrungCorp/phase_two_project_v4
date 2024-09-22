@@ -1,7 +1,10 @@
 import { useOutletContext } from "react-router-dom"
+import { useState } from "react"
 import "../components/Battle.css"
 function Battle(){
     const {players} = useOutletContext()
+    
+    const [damageBoost,setDamageBoost] = useState([])
     console.log(players)
 
     function handleBattle(){
