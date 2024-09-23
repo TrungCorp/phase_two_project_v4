@@ -20,9 +20,11 @@ function PlayerForm(){
     }
 
     function handleAge(event){
+        
         setAge(event.target.value)
     }
     function handleDamage(event){
+        
         setDamageBoost(event.target.value)
     }
     function handleSubmit(event){
@@ -34,9 +36,9 @@ function PlayerForm(){
             },
             body: JSON.stringify({
                 "name": name,
-                "attack": attack,
-                "age": age,
-                "boost": damageBoost
+                "attack": parseInt(attack,10),
+                "age": parseInt(age,10),
+                "boost": parseInt(damageBoost,10)
             })
         })
         .then(resp=>resp.json())
