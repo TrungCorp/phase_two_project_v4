@@ -4,28 +4,28 @@
       "name": "Jack Green",
       "attack": 7,
       "age": 24,
-      "damage-boost": 5,
+      "boost": 5,
       "id": 0
     },
     {
       "name": "Kate Archer",
       "attack": 5,
       "age": 20,
-      "damage-boost": 3,
+      "boost": 3,
       "id": 1
     },
     {
       "name": "Enshi Toga",
       "attack": 8,
       "age": 19,
-      "damage-boost": 2,
+      "boost": 2,
       "id": 2
     },
     {
       "name": "Soto Sona",
-      "attack": "5",
-      "age": "35",
-      "damage-boost": "7",
+      "attack": 5,
+      "age": 35,
+      "boost": 7,
       "id": 3
     }
   ]

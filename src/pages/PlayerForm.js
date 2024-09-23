@@ -5,8 +5,8 @@ import "../components/Form.css"
 
 function PlayerForm(){
     const [name,setName] = useState("")
-    const [attack,setAttack] = useState("")
-    const [age,setAge] = useState("")
+    const [attack,setAttack] = useState()
+    const [age,setAge] = useState()
     const [damageBoost,setDamageBoost] = useState()
     const {handleNewPlayer} =useOutletContext()
 
@@ -36,7 +36,7 @@ function PlayerForm(){
                 "name": name,
                 "attack": attack,
                 "age": age,
-                "damage-boost": damageBoost
+                "boost": damageBoost
             })
         })
         .then(resp=>resp.json())

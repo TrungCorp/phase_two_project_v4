@@ -16,14 +16,10 @@ function Home(){
         
         const userObj = players.find((player) =>{ 
             if (player.name === infoObj.target.innerText){
-            console.log("found")
+            
             setDisplayInfo(player)
          }
-         else{
-            
-            console.log(infoObj.target.innerHTML)
-            console.log("not found")
-         }
+        
         })
         
         
