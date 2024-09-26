@@ -4,11 +4,15 @@ import { useOutletContext } from "react-router-dom";
 import "../components/Form.css"
 
 function PlayerForm(){
+    //PROPS
+    const { handleNewPlayer } = useOutletContext()
+
     const [name,setName] = useState("")
+    const [age, setAge] = useState()
     const [attack,setAttack] = useState()
-    const [age,setAge] = useState()
     const [damageBoost,setDamageBoost] = useState()
-    const {handleNewPlayer} =useOutletContext()
+
+    
 
     function handleName(event){
         

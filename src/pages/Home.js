@@ -4,11 +4,15 @@ import ActiveContainer from "./ActiveContainer";
 import { useOutletContext } from "react-router-dom";
 import ReserveContainer from "./ReserveContainer";
 import { useState } from "react";
+
+
+
 import "../components/Home.css"
 
 function Home(){
-   
+   //GETS PROPS FROM OUTLET
     const {players} = useOutletContext()
+
     const [displayInfo,setDisplayInfo] = useState([])
     console.log(players)
     function handlePlayerInfo(infoObj){

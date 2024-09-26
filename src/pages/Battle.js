@@ -9,14 +9,13 @@ function Battle(){
     const [damageBoost2, setDamageBoost2] = useState()
     const [player1Damage,setPlayer1Damage] = useState()
     const [player2Damage, setPlayer2Damage] = useState()
-    
-
+    //GENERATES RANDOM NUMBER FOR P1 AND P2
     function genRandNumber(){
         const dataLength = players.length
         const randomNum = Math.floor(Math.random() * dataLength)
         return randomNum
     }
-
+    //GENERATES RANDOM BOOST DAMAGE
     function generateBoost(playerObj){
         const playerData = players.find((player)=>player.id === playerObj )
         
@@ -24,6 +23,8 @@ function Battle(){
         
         return playerBoost
     }
+
+    //SETS TOTAL DAMAGE FOR P1 AND P2
     function handleTotalDamage(p1Attack,p1Boost,p2Attack,p2Boost){
         const p1Dmg = p1Attack.attack+p1Boost
         const p2Dmg = p2Attack.attack+p2Boost
@@ -32,6 +33,7 @@ function Battle(){
         setPlayer2Damage(p2Dmg)
         
     }
+    //HANDLES FUNCTIONALITY FOR THE BATTLE BUTTON
     function handleBattle(){
         //holds id value for players
         let randNum1 = genRandNumber()
@@ -47,19 +49,20 @@ function Battle(){
         //set player boosts
         setDamageBoost1(player1Boost)
         setDamageBoost2(player2Boost)
+        //CONST VARS CONTAIN P1 AND P2 OBJECTS
+        const p1Object = (players.find(player => player.id === randNum1))
+        const p2Object = (players.find(player => player.id === randNum2))
+        //SETS P1 AND P2 OBJECTS
+        setPlayer1(p1Object)
+        setPlayer2(p2Object)
         
-        const p1Attack = (players.find(player => player.id === randNum1))
-        const p2Attack = (players.find(player => player.id === randNum2))
-
-        setPlayer1(p1Attack)
-        setPlayer2(p2Attack)
-        
-        handleTotalDamage(p1Attack,player1Boost,p2Attack,player2Boost)
+        handleTotalDamage(p1Object,player1Boost,p2Object,player2Boost)
 
 
         //console.log(player1Boost)
         //console.log(players[randNum1].boost +" :"+player1Boost)
     }
+    
     //GETS STRING OF DAMAGE TO OUTPUT
     function getDamageString(player,boost){
         const damage = player.attack
