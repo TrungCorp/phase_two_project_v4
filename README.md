@@ -7,7 +7,7 @@ On the Form page you can add a new player to the restful server via POST request
 The Battle page contains a mini game where when you click the 'Battle' button it pairs two random players from
 the server and have them 'fight' and whoever's total attack is higher wins.
 
-##Installation
+## Installation
  To create a react project do:
  ```
  npx create-react-app my-app
