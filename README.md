@@ -12,11 +12,27 @@ the server and have them 'fight' and whoever's total attack is higher wins.
  ```
  npx create-react-app my-app
 ```
+Adding react-router:
+
+```
+npm install react-router-dom@6
+```
 
 
-### `npm start`
+## Contents
+This projects uses :
+-react
+-react-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+
+### npm start
+
+This command runs the app in developement mode.
+The url to view the page is 'http://localhost:3000' 
+
+### json-server --watch db.json --port 3001
+
+This commands runs restful server at port 3001
 
 
