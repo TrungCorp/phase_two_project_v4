@@ -30,3 +30,9 @@ const routes = [
 ]
 
 export default routes;
+
+
+//players/new
+
+//players/:id
+

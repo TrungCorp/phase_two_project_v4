@@ -14,6 +14,22 @@ function Home(){
     const {players} = useOutletContext()
 
     const [displayInfo,setDisplayInfo] = useState([])
+    const [word,setWord]= useState("")
+    const [count,setCount] = useState(0)
+
+
+    const handleWord= (event)=>{
+        setWord(event.target.value)
+    }
+
+    const handleWordSubmit = (event)=>{
+        event.preventDefault()
+        const wordLength = word.length
+        setCount((previousCount)=>previousCount+wordLength)
+        setWord("")
+
+    }
+
     console.log(players)
     function handlePlayerInfo(infoObj){
         
@@ -32,12 +48,14 @@ function Home(){
 
     return(
         <div className="home-container">
-           
-            
-            <ActiveContainer players={players} handlePlayerInfo={handlePlayerInfo}>
-
-             
-            </ActiveContainer>
+            <form onSubmit={handleWordSubmit}>
+                <input  value={word}  onChange={handleWord}/>
+                <button>CLICK ME</button>
+            </form>
+            <p>
+                {count}
+            </p>
+            <ActiveContainer players={players} handlePlayerInfo={handlePlayerInfo} />
             <ReserveContainer displayInfo={displayInfo}/>
             
         </div>

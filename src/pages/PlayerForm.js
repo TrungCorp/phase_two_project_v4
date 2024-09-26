@@ -14,7 +14,7 @@ function PlayerForm(){
 
     
 
-    function handleName(event){
+    const handleName =(event)=>{
         
         setName(event.target.value)
     }
@@ -31,6 +31,7 @@ function PlayerForm(){
         
         setDamageBoost(event.target.value)
     }
+
     function handleSubmit(event){
         event.preventDefault()
         fetch("http://localhost:3001/players",{
